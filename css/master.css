@@ -73,3 +73,11 @@ body{
 .lae-secondary{
   background-color: #585858;
 }
+.navbar-1{
+    background-color: red;
+    color: black;
+    border: solid 1px;
+    justify-content: center;
+    height: 5%;
+    text-align: center;
+}
