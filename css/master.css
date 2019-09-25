@@ -6,36 +6,38 @@ h5{font-size: 1rem;}
 h6{font-size: 0.9rem;}
 
 
-
-.lae-textbase{
+/* Color end */
+.textbase{
   color: #d5dae6;
 }
-.lae-success{
+.success{
   color: green;
 }
-.lae-info{
+.info{
   color: skyblue;
 }
-.lae-warning{
+.warning{
   color: orange;
 }
-.lae-danger{
+.danger{
 color: red;
 }
-
-.lae-air-l-05{
-  margin-left: 0.5rem;
+.background{
+  background-color: #F0F0F0;
 }
-
-.lae-air-r-05{
-  margin-right: 0.5rem;
+.primary-bg{
+  background-color: #373f52;
 }
-
-.lae-flex{
+.secondary-bg{
+  background-color: #585858;
+}
+/* Color start */
+/* Layout start */
+.flex{
   display: flex;
 }
 
-.lae-viewport{
+.viewport{
   height: 100vh;
   max-width: 90vw;
   position: relative;
@@ -43,7 +45,7 @@ color: red;
   left: 0px;
 }
 
-.lae-navbar{
+.navbar{
 position: fixed;
 top: 0px;
 left: 0px;
@@ -51,7 +53,7 @@ width: 100%;
 min-height: 6rem;
 border: solid 1px black;
 }
-.lae-sidebar{
+.sidebar{
   position: fixed;
   left: 0px;
   width: 5rem;
@@ -59,22 +61,99 @@ border: solid 1px black;
   color: #d5dae6;
   border: solid 1px black;
 }
-.lae-main{
+.main{
   position: relative;
   left: 5rem;
 }
 body{
   top: 0px;
 }
+/* Layout end */
+/* Margin's start */
 
-.lae-background{
-  background-color: #F0F0F0;
+.margin-10 {
+    margin: 0.1em;
 }
 
-.lae-primary{
-  background-color: #373f52;
+.margin-20 {
+    margin: 0.2em;
 }
 
-.lae-secondary{
-  background-color: #585858;
+.margin-50 {
+    margin: 0.5em;
 }
+
+.margin-100 {
+    margin: 1em;
+}
+
+.margin-150 {
+    margin: 1.5em;
+}
+
+.margin-200 {
+    margin: 2em;
+}
+
+.margin-0 {
+    margin: 0em;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+/* Margin's end */
+
+/* border's start */
+
+.border-001-solid {
+  border: solid 0.01em;
+}
+.border-01-solid {
+    border: solid 0.1em;
+}
+.border-02-solid {
+    border: solid 0.2em;
+}
+
+
+.border-001-dashed {
+  border: dashed 0.01em;
+}
+.border-01-dashed {
+    border: dashed 0.1em;
+}
+.border-02-dashed {
+    border: dashed 0.2em;
+}
+
+
+.border-001-ridge {
+  border: ridge 0.01em;
+}
+.border-01-ridge {
+    border: ridge 0.1em;
+}
+.border-02-ridge {
+    border: ridge 0.2em;
+}
+
+
+
+/* border's end* /
+  /* Padding start */
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-1 {
+    padding: 1em;
+}
+
+.padding-01 {
+    padding: 0.1em;
+}
+
+/* Padding end */
