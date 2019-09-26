@@ -63,6 +63,7 @@ border: solid 1px black;
 }
 .main{
   position: relative;
+  top: 6rem;
   left: 5rem;
 }
 body{
@@ -157,9 +158,21 @@ body{
 }
 
 /* Padding end */
-/* Containers */
+/* Shadow start */
+.shadow {
+  box-shadow: 5px 5px 5px black;
+}
+/* Shadow end */
+/* Containers start */
 .container {
     width: 80vw;
-    box-shadow: 5px 5px 5px black;
-
+}
+/* Container end */
+/* Nav start */
+nav{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  width: 100%;
 }
