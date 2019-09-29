@@ -4,6 +4,7 @@ h3{font-size: 1.5rem;}
 h4{font-size: 1.2rem;}
 h5{font-size: 1rem;}
 h6{font-size: 0.9rem;}
+a{text-decoration: none; color: #d5dae6; }
 
 
 /* Color end */
@@ -20,7 +21,7 @@ h6{font-size: 0.9rem;}
   color: orange;
 }
 .danger{
-color: red;
+  color: red;
 }
 .background{
   background-color: #F0F0F0;
@@ -35,8 +36,14 @@ color: red;
 /* Layout start */
 .flex{
   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
 }
-
+.flex-around{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
 .viewport{
   height: 100vh;
   max-width: 90vw;
@@ -51,7 +58,9 @@ top: 0px;
 left: 0px;
 width: 100%;
 min-height: 6rem;
+max-height: 6rem;
 border: solid 1px black;
+z-index: 1;
 }
 .sidebar{
   position: fixed;
@@ -175,4 +184,73 @@ nav{
   left: 0px;
   background-color: black;
   width: 100%;
+}
+/* Nav end */
+/* Text-alignment start */
+.text-left{
+  text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+/*text-alignment end*/
+/* dropdown start */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* dropdown end */
+.cat{
+width: 100%;
+    height: 100%;
+    min-height: 260px;
+    background-position: 50% 50%;
+    background-size: auto 30%;
+  }
+  .section {
+    display: block;
+    box-sizing: border-box;
+    height: 50vh;
+    width: 100%;
+    min-height: 260px;
+    position: relative;
+    text-align: center;
+    background: #FFF;
+}
+  .section:nth-child(odd) .cat {
+      background-color: #fff !important;
+  }
+  .section:nth-child(even) .cat {
+    background-color: #eee !important;
+}
+  .content-main {
+      height: 100%;
+      width: 100%;
+  }
+.navbar-margin{
+  margin-top: 6.1rem;
+}
+.section h1, .section h2, .section h3, .section p {
+  display: inline-block;
+  top: 50%;
+  margin: 0px auto;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.4em;
 }
