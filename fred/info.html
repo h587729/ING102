@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+             <script>
+        function KeyPress(event) {
+		var c= event.which || event.keyCode;
+		
+	    var x = document.getElementById("tankbil");
+	    if (c == 101) // e
+			x.height = x.height * 1.1;
+		if (c == 120) // x
+			x.height = x.height / 1.1;
+		if (c == 97)  // a
+			x.width = x.width * 1.1;
+		if (c == 102) // f
+			x.width = x.width / 1.1;
+	}		
+             </script>
+			 
+         <title>Hovedside</title>	
+             <link rel="stylesheet" href="css_mal.css" />
+    </head>
+	
+     <body onkeypress="KeyPress(event)">
+         <header>
+		 <div class="rekke">
+		 
+		     <div onclick="location.href='HTML-start.html';" style="cursor:pointer;" class="knapp_hjem">
+	         </div>
+			 
+		     <div onclick="location.href='info.html';" style="cursor:pointer;" class="knapp_info">
+	         </div>
+			 
+			 <div onclick="location.href='medlemmer.html';" style="cursor:pointer;" class="knapp_medlemm">
+	         </div>
+			 
+		 </div>
+         </header>
+		 
+		 
+     <div class="main">
+	 
+         <h3>Gruppen har i oppgave å lage ett nettsted for sammenligning av drivstoffpriser</h3>
+         <p>Oppgaven gruppe 3 har blitt tildelt er å planlegge ein nettstad eller app for å sammanligne drivstoff prisar. 
+		 Målet med ein slik nettstad eller app vil vere at man kan då effektivt sjekke dei forsjellige stadane I sitt område for bensin eller diesel prisar.
+		 Grunnen til at en slik app eller nettstad vil vere nyttig er at dagens prisar endrer seg ganske mykje frå dag til dag eller time til time. 
+		 Derfor vil en slik app eller nettstad spare personar mykje tid og eller pengar. </p>
+     </div>
+	 
+     <footer> 
+         <figure>
+             <img id="tankbil" alt="takbil" height="350" width="870" src="tankbil.jpg" />
+         </figure> 
+     </footer>
+	 
+     </body>
+</html>
