@@ -4,38 +4,47 @@ h3{font-size: 1.5rem;}
 h4{font-size: 1.2rem;}
 h5{font-size: 1rem;}
 h6{font-size: 0.9rem;}
+a{text-decoration: none; color: #d5dae6; }
 
 
-
-.lae-textbase{
+/* Color end */
+.textbase{
   color: #d5dae6;
 }
-.lae-success{
+.success{
   color: green;
 }
-.lae-info{
+.info{
   color: skyblue;
 }
-.lae-warning{
+.warning{
   color: orange;
 }
-.lae-danger{
-color: red;
+.danger{
+  color: red;
 }
-
-.lae-air-l-05{
-  margin-left: 0.5rem;
+.background{
+  background-color: #F0F0F0;
 }
-
-.lae-air-r-05{
-  margin-right: 0.5rem;
+.primary-bg{
+  background-color: #373f52;
 }
-
-.lae-flex{
+.secondary-bg{
+  background-color: #585858;
+}
+/* Color start */
+/* Layout start */
+.flex{
   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
 }
-
-.lae-viewport{
+.flex-around{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.viewport{
   height: 100vh;
   max-width: 90vw;
   position: relative;
@@ -43,15 +52,17 @@ color: red;
   left: 0px;
 }
 
-.lae-navbar{
+.navbar{
 position: fixed;
 top: 0px;
 left: 0px;
 width: 100%;
 min-height: 6rem;
+max-height: 6rem;
 border: solid 1px black;
+z-index: 1;
 }
-.lae-sidebar{
+.sidebar{
   position: fixed;
   left: 0px;
   width: 5rem;
@@ -59,22 +70,187 @@ border: solid 1px black;
   color: #d5dae6;
   border: solid 1px black;
 }
-.lae-main{
+.main{
   position: relative;
+  top: 6rem;
   left: 5rem;
 }
 body{
   top: 0px;
 }
+/* Layout end */
+/* Margin's start */
 
-.lae-background{
-  background-color: #F0F0F0;
+.margin-10 {
+    margin: 0.1em;
 }
 
-.lae-primary{
-  background-color: #373f52;
+.margin-20 {
+    margin: 0.2em;
 }
 
-.lae-secondary{
-  background-color: #585858;
+.margin-50 {
+    margin: 0.5em;
+}
+
+.margin-100 {
+    margin: 1em;
+}
+
+.margin-150 {
+    margin: 1.5em;
+}
+
+.margin-200 {
+    margin: 2em;
+}
+
+.margin-0 {
+    margin: 0em;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+/* Margin's end */
+
+/* border's start */
+
+.border-001-solid {
+  border: solid 0.01em;
+}
+.border-01-solid {
+    border: solid 0.1em;
+}
+.border-02-solid {
+    border: solid 0.2em;
+}
+
+
+.border-001-dashed {
+  border: dashed 0.01em;
+}
+.border-01-dashed {
+    border: dashed 0.1em;
+}
+.border-02-dashed {
+    border: dashed 0.2em;
+}
+
+
+.border-001-ridge {
+  border: ridge 0.01em;
+}
+.border-01-ridge {
+    border: ridge 0.1em;
+}
+.border-02-ridge {
+    border: ridge 0.2em;
+}
+
+
+
+/* border's end* /
+/* Padding start */
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-1 {
+    padding: 1em;
+}
+
+.padding-01 {
+    padding: 0.1em;
+}
+
+/* Padding end */
+/* Shadow start */
+.shadow {
+  box-shadow: 5px 5px 5px black;
+}
+/* Shadow end */
+/* Containers start */
+.container {
+    width: 80vw;
+}
+/* Container end */
+/* Nav start */
+nav{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  width: 100%;
+}
+/* Nav end */
+/* Text-alignment start */
+.text-left{
+  text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+/*text-alignment end*/
+/* dropdown start */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* dropdown end */
+.cat{
+width: 100%;
+    height: 100%;
+    min-height: 260px;
+    background-position: 50% 50%;
+    background-size: auto 30%;
+  }
+  .section {
+    display: block;
+    box-sizing: border-box;
+    height: 50vh;
+    width: 100%;
+    min-height: 260px;
+    position: relative;
+    text-align: center;
+    background: #FFF;
+}
+  .section:nth-child(odd) .cat {
+      background-color: #fff !important;
+  }
+  .section:nth-child(even) .cat {
+    background-color: #eee !important;
+}
+  .content-main {
+      height: 100%;
+      width: 100%;
+  }
+.navbar-margin{
+  margin-top: 6.1rem;
+}
+.section h1, .section h2, .section h3, .section p {
+  display: inline-block;
+  top: 50%;
+  margin: 0px auto;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.4em;
 }
