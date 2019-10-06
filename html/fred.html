@@ -1,64 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
-<script>
-        function KeyPress(event) {
-		var c= event.which || event.keyCode;
+  <meta charset="utf-8">
+  <title>Fred</title>
+  <link rel="stylesheet" href="../css/master.css">
+</head>
+<body class="background">
+  <nav class="navbar flex">
+    <div class="dropdown">
+      <h1 class=" textbase" style="margin-left: 3em;">Medlemmer</h1>
+      <div class="dropdown-content primary-bg" style="margin-left: 3em;">
+        <p><a href="./thomas.html"> Thomas</a></p>
+        <p><a href="./kevin.html"> Kevin</a></p>
+        <p><a href="./fred.html"> Fred</a></p>
+        <p><a href="./sebastian.html">Sebastian </a></p>
+        <p><a href="./gunnar.html"> Gunnar</a></p>
 
-	    var x = document.getElementById("tankbil");
-	    if (c == 101) // e
-			x.height = x.height * 1.1;
-		if (c == 120) // x
-			x.height = x.height / 1.1;
-		if (c == 97)  // a
-			x.width = x.width * 1.1;
-		if (c == 102) // f
-			x.width = x.width / 1.1;
-	}
-             </script>
-			 <title>Fred</title>
+      </div>
+    </div>
+    <h1 class="textbase">Fred</h1>
+    <h1 class="textbase" style="margin-right: 5em;">  <a href="./main.html"> Main</a> </h1>
 
-    <link rel="stylesheet" href="../css/master.css">
-	</head>
-	<body class="background" onkeypress="KeyPress(event)">
-  <header>
-  <div class="rekke">
-
-		     <div onclick="location.href='HTML-start.html';" style="cursor:pointer;" class="knapp_hjem">
-	         </div>
-
-		     <div onclick="location.href='info.html';" style="cursor:pointer;" class="knapp_info">
-	         </div>
-
-			 <div onclick="location.href='medlemmer.html';" style="cursor:pointer;" class="knapp_medlemm">
-	         </div>
-
-		 </div>
-<h1>Hei eg heiter Fred Christiansen!</h1>
-</header>
-<div class="main">
-<h3>Litt om meg</h3>
-<p>Eg kjem frå og bur i Jølster og går på Informasjons Teknologi i Førde. Eg jobbar på Spar Jølstraholmen.</p>
-<p>På fritida likar eg å</p>
-<table style="width:50%">
-<tr>
-    <td>-Spele dataspel</td>
-  </tr>
-      <tr>
-      <td>-Sjå på serier og filmar</td>
-	  </tr>
-    <tr>
-      <td>-Trene</td>
-	  </tr>
-  </table>
+  </nav>
+  <div class="navbar-margin">
   </div>
-<footer>
-<img alt="Bilde av Fred" height="420" width="420" src="https://uc7e5a76e4bb4182feebef7686a8.previews.dropboxusercontent.com/p/thumb/AAmgeyK989soMF-i4j56XKp-BwGcFnjO7LBDX7dHv5Kb0Nbh3GNkLa0UfjHWmxNka12XRMS3qEATfzNjCit9iYwT6igWDgCGvNPnAPbfljCO1oMk0E10BMWpDFi8qJSIMMeGPj3-g6XDCe6o9MEqZKBWoOXTQlOSSOGWd8fPDneWxpa_367FcgmtoYLQyr4QgLGNwKVjy2yS7ODTpbq1gIrS_PCu6wk2xEhoe8nqDtyUHzYMoyFSvmVOkhhlPawR_HuHlP2s1hqk6NfKMXUoDPnLSruHz3m2xu91lld8m_yjx1dqADeD9ahnYrxs6JaW6MQUluRrhTEh_1rIzDRc_403BjY4TtyDuepImkXYR6MxRg/p.jpeg?fv_content=true&size_mode=5" >
-<figure>
-<img id="tankbil" alt="tankbil" height="350" width="870" src="https://uce536d11e5f91bfe523aac26795.previews.dropboxusercontent.com/p/thumb/AAlhVrNcqxQEtAbL8_pgFo6QPM45NhtrnVlV1vSbN4BJok_7qrKNe6GeuGKznY9BeHFJFA_cGGoo7ZHpx_pQ1DLHhTbVTMTTBxnGbGfDPedYlR4Il8F_X8NDT9xb42rGLkqeBGjJqYZrzE9Ks74Xp3HYu9JMEGIThVxSrZx9dTDrpWL6zNj8JNPL_8m4DD6JbjzexMcbdfZsrezh6Vzeji9wmT2QwCO-Rs3av4DRp_idddKJaTR6a3yyyt6FyGUh7AfhBvygIYSKdB7FYxXh_IFIOgSYBDfxu6m4yGa-WGEECkaiDJ9zUA8qbegczx0UwGTYq0kUjqdjzdQyFGmfznV602wSizBIbwjwH55RBXRmhg/p.jpeg?fv_content=true&size_mode=5" />
-</figure>
-<p><a href="HTML-start.html">Tilbake til hovudside</a></p>
-</footer>
-
+  <div class="section">
+    <div class="content-main">
+      <div class="cat">
+	  <h1>Litt om meg: </h1>
+	  <br>
+         <p>Eg kjem frå og bur i Jølster og går på Informasjons Teknologi i Førde. I tillegg jobbar eg på Spar Jølstraholmen.</p>
+		 <br>
+		 <br>
+		 <p>På fritida likar eg å:</p>
+                 <table>
+                 <tr> <td>-Spele dataspel</td> </tr>
+                 <tr> <td>-Sjå på serier og filmar</td> </tr>
+                 <tr> <td>-Trene</td> </tr>
+                 </table>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="content-main">
+      <div class="cat">
+	  <img src="https://i.imgur.com/efPVg8M.jpg" alt="Bilde av Fred" style="float:right" height="420" width="420">
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="content-main">
+      <div class="cat">
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="content-main">
+      <div class="cat">
+      </div>
+    </div>
+  </div>
 </body>
+<script src="../js/master.js"></script>
 </html>
