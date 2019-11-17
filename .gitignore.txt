@@ -1,0 +1,5 @@
+.log
+.pptx
+.docx
+.doc
+**/logs
